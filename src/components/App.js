@@ -12,6 +12,7 @@ const App = () => {
 
    function fetchdetalils(){
       fetch(` https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`).then((res)=>res.json()).then((data)=>{
+        setCity("");
         setName(data.name);
         setTemp(data.main.temp)
         setWeather(data.weather[0].description)
