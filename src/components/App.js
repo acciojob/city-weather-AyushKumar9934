@@ -34,7 +34,7 @@ const App = () => {
           <h1>{temp}</h1>
           <h2>{weather}</h2>
          
-         </div>:""}
+         </div>:<div className="weather"></div>}
 
     </div>
   )
